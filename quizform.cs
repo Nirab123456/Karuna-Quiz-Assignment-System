@@ -18,6 +18,7 @@ namespace Karuna_assignment_quiz
         private string userName;
         private int numberOfQuestions;
         private List<string> selectedTopics;
+        private int currentQuestion = 0;
 
 
 
@@ -31,6 +32,7 @@ namespace Karuna_assignment_quiz
             this.numberOfQuestions = numberOfQuestions;
             this.selectedTopics = selectedTopics;
 
+;
 
 
 
@@ -38,16 +40,19 @@ namespace Karuna_assignment_quiz
             // You can display these questions in your UI or perform any other necessary actions
             // For example, you can display the first question in the list as follows:
 
-            List<Question> quizQuestions = QuestionLoader.LoadQuestions(numberOfQuestions, selectedTopics);
-            var firstQuestion = quizQuestions.FirstOrDefault();
-            if (firstQuestion != null)
-            {
-                label3.Text = firstQuestion.QuestionText;
-                checkedListBox1.Items.AddRange(firstQuestion.Options.ToArray());
-            }
+            //List<Question> quizQuestions = QuestionLoader.LoadQuestions(numberOfQuestions, selectedTopics);
+            //var firstQuestion = quizQuestions.FirstOrDefault();
+            //if (firstQuestion != null)
+            //{
+            //    label3.Text = firstQuestion.QuestionText;
+            //    checkedListBox1.Items.AddRange(firstQuestion.Options.ToArray());
+            //}
 
             // Customize the form based on the received information
             label1.Text = $"Hello, {userName}! You have chosen {numberOfQuestions} questions. Good luck.";
+
+            //auto generate first click
+            button1_Click(null, null);
 
 
 
@@ -70,26 +75,102 @@ namespace Karuna_assignment_quiz
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            var currentQuestion = 0;
+            //first check the answer of the first question
+            
+
+
+
+
+                //if (currentQuestion < 0)
+                //    {
+                //    var question = QuestionLoader.LoadQuestions(numberOfQuestions, selectedTopics)[currentQuestion];
+                //    var correctAnswer = question.Answer;
+                //    var selectedAnswer = checkedListBox1.SelectedItem;
+                //    if (selectedAnswer == correctAnswer)
+                //    {
+                //        MessageBox.Show("Correct Answer");
+                //    }
+                //    else
+                //    {
+                //        MessageBox.Show("Wrong Answer");
+                //    }
+                //    currentQuestion++;
+                //    }
+                //else
+                //{
+                //    if (e == null) 
+                //    {
+
+                //    }
+                //    else
+                //    {
+                //        var question = QuestionLoader.LoadQuestions(numberOfQuestions, selectedTopics)[currentQuestion];
+                //        var correctAnswer = question.Answer;
+                //        var selectedAnswer = checkedListBox1.SelectedItem;
+                //        if (selectedAnswer == correctAnswer)
+                //        {
+                //            MessageBox.Show("Correct Answer");
+                //        }
+                //        else
+                //        {
+                //            MessageBox.Show("Wrong Answer");
+                //        }
+                //        currentQuestion++;
+
+                //    }
+
+
+                //}
+
+
+  
+
+
+
+
             List<Question> quizQuestions = QuestionLoader.LoadQuestions(numberOfQuestions, selectedTopics);
-            var firstQuestion = quizQuestions.FirstOrDefault();
-            if (firstQuestion != null)
+            var runningQuestion = quizQuestions[currentQuestion];
+            label3.Text = runningQuestion.QuestionText;
+            checkedListBox1.Items.Clear();
+            checkedListBox1.Items.AddRange(runningQuestion.Options.ToArray());
+
+
+
+            if ( e == null)
             {
-                label3.Text = firstQuestion.QuestionText;
-                checkedListBox1.Items.AddRange(firstQuestion.Options.ToArray());
-            }
-            if (currentQuestion < quizQuestions.Count)
-            {
-                var question = quizQuestions[currentQuestion];
-                label3.Text = question.QuestionText;
-                checkedListBox1.Items.Clear();
-                checkedListBox1.Items.AddRange(question.Options.ToArray());
-                currentQuestion++;
+
             }
             else
             {
-                MessageBox.Show("You have reached the end of the quiz");
+                var question = QuestionLoader.LoadQuestions(numberOfQuestions, selectedTopics)[currentQuestion];
+                var correctAnswer = question.Answer;
+                var selectedAnswer = checkedListBox1.SelectedItem;
+                if ( selectedAnswer == null )
+                {
+                    MessageBox.Show("Please select an answer");
+                }   
+
+                if (selectedAnswer.Equals(correctAnswer))
+                {
+                    MessageBox.Show("Correct Answer");
+                }
+                else
+                {
+                    MessageBox.Show("Wrong Answer");
+                }
+                currentQuestion++;
+
             }
+
+
+
+
+
+
+
+
+
+
 
         }
     }
