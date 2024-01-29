@@ -19,6 +19,7 @@ namespace Karuna_assignment_quiz
         private int numberOfQuestions;
         private List<string> selectedTopics;
         private int currentQuestion = 0;
+        private int selectedAnswer;
 
 
 
@@ -67,6 +68,9 @@ namespace Karuna_assignment_quiz
         }
         private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //save the selected answer
+            selectedAnswer = checkedListBox1.Items.IndexOf(checkedListBox1.SelectedItem);
+
 
         }
         private void label1_Click(object sender, EventArgs e)
@@ -75,103 +79,54 @@ namespace Karuna_assignment_quiz
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            //first check the answer of the first question
-            
-
-
-
-
-                //if (currentQuestion < 0)
-                //    {
-                //    var question = QuestionLoader.LoadQuestions(numberOfQuestions, selectedTopics)[currentQuestion];
-                //    var correctAnswer = question.Answer;
-                //    var selectedAnswer = checkedListBox1.SelectedItem;
-                //    if (selectedAnswer == correctAnswer)
-                //    {
-                //        MessageBox.Show("Correct Answer");
-                //    }
-                //    else
-                //    {
-                //        MessageBox.Show("Wrong Answer");
-                //    }
-                //    currentQuestion++;
-                //    }
-                //else
-                //{
-                //    if (e == null) 
-                //    {
-
-                //    }
-                //    else
-                //    {
-                //        var question = QuestionLoader.LoadQuestions(numberOfQuestions, selectedTopics)[currentQuestion];
-                //        var correctAnswer = question.Answer;
-                //        var selectedAnswer = checkedListBox1.SelectedItem;
-                //        if (selectedAnswer == correctAnswer)
-                //        {
-                //            MessageBox.Show("Correct Answer");
-                //        }
-                //        else
-                //        {
-                //            MessageBox.Show("Wrong Answer");
-                //        }
-                //        currentQuestion++;
-
-                //    }
-
-
-                //}
-
-
-  
-
-
-
-
             List<Question> quizQuestions = QuestionLoader.LoadQuestions(numberOfQuestions, selectedTopics);
             var runningQuestion = quizQuestions[currentQuestion];
             label3.Text = runningQuestion.QuestionText;
             checkedListBox1.Items.Clear();
             checkedListBox1.Items.AddRange(runningQuestion.Options.ToArray());
 
-
-
-            if ( e == null)
+            if (e != null)
             {
 
-            }
-            else
-            {
-                var question = QuestionLoader.LoadQuestions(numberOfQuestions, selectedTopics)[currentQuestion];
-                var correctAnswer = question.Answer;
-                var selectedAnswer = checkedListBox1.SelectedItem;
-                if ( selectedAnswer == null )
+                if (selectedAnswer == null)
                 {
                     MessageBox.Show("Please select an answer");
-                }   
-
-                if (selectedAnswer.Equals(correctAnswer))
-                {
-                    MessageBox.Show("Correct Answer");
                 }
                 else
                 {
-                    MessageBox.Show("Wrong Answer");
+                    var question = quizQuestions[currentQuestion];
+                    var correctAnswer = question.Answer.ToLower();
+                    var selectedcorrectanswer = question.Options[selectedAnswer].ToString().ToLower();
+
+                    if (selectedcorrectanswer == correctAnswer) 
+                    {
+                        MessageBox.Show("Correct Answer");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Wrong Answer");
+                    }
+
+                    currentQuestion++;
+
+                    // Check if all questions are answered
+                    if (currentQuestion >= numberOfQuestions)
+                    {
+                        MessageBox.Show("Quiz completed!");
+                        // You might want to handle the completion of the quiz here
+                        // For example, display a summary or navigate to another form
+                    }
+
+                    // Display the next question
+                    var nextQuestion = quizQuestions[currentQuestion];
+                    label3.Text = nextQuestion.QuestionText;
+                    checkedListBox1.Items.Clear();
+                    checkedListBox1.Items.AddRange(nextQuestion.Options.ToArray());
+
+
                 }
-                currentQuestion++;
-
             }
-
-
-
-
-
-
-
-
-
-
-
         }
+
     }
 }
