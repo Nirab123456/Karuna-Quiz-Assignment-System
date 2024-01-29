@@ -37,7 +37,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Verdana", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(124, 9);
+            label1.Location = new Point(126, 26);
             label1.Name = "label1";
             label1.Size = new Size(67, 20);
             label1.TabIndex = 0;
@@ -48,21 +48,22 @@
             // 
             checkedListBox1.FormattingEnabled = true;
             checkedListBox1.Items.AddRange(new object[] { "a", "b", "c", "d" });
-            checkedListBox1.Location = new Point(12, 103);
+            checkedListBox1.Location = new Point(12, 205);
             checkedListBox1.MultiColumn = true;
             checkedListBox1.Name = "checkedListBox1";
-            checkedListBox1.Size = new Size(664, 26);
+            checkedListBox1.Size = new Size(445, 202);
             checkedListBox1.TabIndex = 1;
             checkedListBox1.SelectedIndexChanged += checkedListBox1_SelectedIndexChanged;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 69);
+            label2.Location = new Point(12, 98);
             label2.Name = "label2";
             label2.Size = new Size(66, 20);
             label2.TabIndex = 2;
             label2.Text = "question";
+            label2.TextAlign = ContentAlignment.TopCenter;
             label2.Click += label2_Click;
             // 
             // quizform

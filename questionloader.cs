@@ -7,9 +7,17 @@ using Newtonsoft.Json.Linq;
 
 public class Question
 {
+    [JsonProperty("topic")]
+
     public string Topic { get; set; }
+    [JsonProperty("questiontext")]
+
     public string QuestionText { get; set; }
+    [JsonProperty("options")]
+
     public List<string> Options { get; set; }
+    [JsonProperty("answer")]
+
     public string Answer { get; set; }
 }
 

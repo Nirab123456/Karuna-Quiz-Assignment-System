@@ -41,13 +41,13 @@ namespace Karuna_assignment_quiz
 
             if (firstQuestion != null)
             {
-                label2.Text = firstQuestion.QuestionText;
+                label1.Text = firstQuestion.QuestionText;
                 Console.WriteLine(firstQuestion.QuestionText);
                 checkedListBox1.Items.AddRange(firstQuestion.Options.ToArray());
             }
 
             // Customize the form based on the received information
-            label1.Text = $"Hello, {userName}! You have chosen {numberOfQuestions} questions. Good luck.";
+            //label1.Text = $"Hello, {userName}! You have chosen {numberOfQuestions} questions. Good luck.";
 
 
         }
