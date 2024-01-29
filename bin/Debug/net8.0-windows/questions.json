@@ -1,0 +1,775 @@
+{
+    "Question": [
+        {
+           "topic": "Math",
+           "question": "In Roman numerals, what does 'V' represent?",
+           "options": ["A) 5", "B) 10", "C) 50", "D) 100"],
+           "answer": "A) 5"
+        },
+        
+        {
+           "topic": "Math",
+           "question": "What is the term for a three-sided polygon?",
+           "options": ["A) Quadrilateral", "B) Pentagon", "C) Hexagon", "D) Triangle"],
+           "answer": "D) Triangle"
+        },
+        
+        {
+           "topic": "Math",
+           "question": "In geometry, what do parallel lines never do?",
+           "options": ["A) Intersect", "B) Merge", "C) Diverge", "D) Rotate"],
+           "answer": "A) Intersect"
+        },
+        
+        {
+           "topic": "Math",
+           "question": "What is the name for a polygon with eight sides?",
+           "options": ["A) Hexagon", "B) Octagon", "C) Decagon", "D) Nonagon"],
+           "answer": "B) Octagon"
+        },
+        
+        {
+           "topic": "Math",
+           "question": "Which mathematical symbol represents 'less than'?",
+           "options": ["A) >", "B) <", "C) =", "D) +"],
+           "answer": "B) <"
+        },
+        
+        {
+           "topic": "Math",
+           "question": "What is the sum of the interior angles of a quadrilateral?",
+           "options": ["A) 180 degrees", "B) 360 degrees", "C) 450 degrees", "D) 540 degrees"],
+           "answer": "B) 360 degrees"
+        },
+        
+        {
+           "topic": "Math",
+           "question": "In probability, what is the term for the ratio of the number of favorable outcomes to the total number of outcomes?",
+           "options": ["A) Percentage", "B) Fraction", "C) Probability", "D) Quotient"],
+           "answer": "C) Probability"
+        },
+        
+        {
+           "topic": "Math",
+           "question": "What is the term for the longest side of a right-angled triangle?",
+           "options": ["A) Hypotenuse", "B) Opposite", "C) Adjacent", "D) Base"],
+           "answer": "A) Hypotenuse"
+        },
+        
+        {
+           "topic": "Math",
+           "question": "In algebra, what is a variable?",
+           "options": ["A) A constant", "B) An unknown value", "C) A fraction", "D) A prime number"],
+           "answer": "B) An unknown value"
+        },
+        
+        {
+            "topic": "Math",
+            "question": "What is the term for a whole number greater than 1 that has no positive divisors other than 1 and itself?",
+            "options": ["A) Composite", "B) Prime", "C) Rational", "D) Irrational"],
+            "answer": "B) Prime"
+        },
+        
+        {
+            "topic": "Math",
+            "question": "In geometry, what is the name for a line segment that connects two non-adjacent vertices of a polygon?",
+            "options": ["A) Diagonal", "B) Radius", "C) Chord", "D) Tangent"],
+            "answer": "A) Diagonal"
+        },
+        
+        {
+            "topic": "Math",
+            "question": "What is the term for a number that can be expressed as the fraction a/b, where a and b are integers and b is not equal to zero?",
+            "options": ["A) Integer", "B) Rational number", "C) Irrational number", "D) Imaginary number"],
+            "answer": "B) Rational number"
+        },
+        
+        {
+            "topic": "Math",
+            "question": "In statistics, what is the measure of the average value of a set of numbers?",
+            "options": ["A) Median", "B) Mode", "C) Mean", "D) Range"],
+            "answer": "C) Mean"
+        },
+        
+        {
+            "topic": "Math",
+            "question": "What is the term for a polygon with all sides and angles equal?",
+            "options": ["A) Equilateral", "B) Isosceles", "C) Scalene", "D) Regular"],
+            "answer": "D) Regular"
+        },
+        
+        {
+            "topic": "Math",
+            "question": "In trigonometry, what is the reciprocal of sine?",
+            "options": ["A) Cosine", "B) Tangent", "C) Secant", "D) Cosecant"],
+            "answer": "D) Cosecant"
+        },
+        
+        {
+            "topic": "Math",
+            "question": "What is the term for a shape that is both a square and a rectangle?",
+            "options": ["A) Rhombus", "B) Parallelogram", "C) Trapezoid", "D) Quadrilateral"],
+            "answer": "A) Rhombus"
+        },
+        
+        {
+            "topic": "Math",
+            "question": "What is the term for the number by which another number is divided?",
+            "options": ["A) Divisor", "B) Quotient", "C) Multiplicand", "D) Remainder"],
+            "answer": "A) Divisor"
+        },
+        
+        {
+            "topic": "Math",
+            "question": "In geometry, what is the term for a line that touches a curve at a single point without crossing it?",
+            "options": ["A) Tangent", "B) Secant", "C) Chord", "D) Arc"],
+            "answer": "A) Tangent"
+        },
+        
+        {
+            "topic": "Math",
+            "question": "What is the term for a polygon with five sides?",
+            "options": ["A) Hexagon", "B) Octagon", "C) Pentagon", "D) Nonagon"],
+            "answer": "C) Pentagon"
+        },
+        
+        {
+            "topic": "Math",
+            "question": "In algebra, what is the distributive property?",
+            "options": ["A) a(b + c) = ab + ac", "B) a(b - c) = ab - ac", "C) a/b = c/d", "D) a^2 + b^2 = c^2"],
+            "answer": "A) a(b + c) = ab + ac"
+        },
+        
+        {
+            "topic": "Math",
+            "question": "What is the term for a polygon with six sides?",
+            "options": ["A) Hexagon", "B) Octagon", "C) Pentagon", "D) Hexadecagon"],
+            "answer": "A) Hexagon"
+        },
+                
+        {
+            "topic": "Math",
+            "question": "What is the term for a number that is the same when read backward?",
+            "options": ["A) Palindrome", "B) Prime", "C) Composite", "D) Irregular"],
+            "answer": "A) Palindrome"
+        },
+        
+        {
+            "topic": "Math",
+            "question": "In statistics, what is the term for the most frequently occurring number in a set?",
+            "options": ["A) Median", "B) Mode", "C) Mean", "D) Range"],
+            "answer": "B) Mode"
+        },
+        
+        {
+            "topic": "Math",
+            "question": "What is the term for the value below which a given percentage of observations fall in a set of data?",
+            "options": ["A) Median", "B) Mode", "C) Mean", "D) Percentile"],
+            "answer": "A) Median"
+        },
+        
+        {
+            "topic": "Math",
+            "question": "What is the term for a polygon with seven sides?",
+            "options": ["A) Heptagon", "B) Octagon", "C) Hexagon", "D) Nonagon"],
+            "answer": "A) Heptagon"
+        },
+        
+        {
+            "topic": "Math",
+            "question": "In geometry, what is the term for a curve that never ends and continues indefinitely?",
+            "options": ["A) Line", "B) Circle", "C) Ray", "D) Line segment"],         
+            "answer": "A) Line"
+        },
+        
+        {
+            "topic": "Math",
+            "question": "What is the term for a number that cannot be expressed as a fraction?",
+            "options": ["A) Rational number", "B) Irrational number", "C) Integer", "D) Prime number"],
+            "answer": "B) Irrational number"
+        },
+        
+        {
+            "topic": "Math",
+            "question": "What is the term for the distance around a circle?",
+            "options": ["A) Diameter", "B) Circumference", "C) Radius", "D) Arc length"],
+            "answer": "B) Circumference"
+        },
+        
+        {
+            "topic": "Math",
+            "question": "In algebra, what is the term for the result of multiplying two or more numbers?",
+            "options": ["A) Sum", "B) Product", "C) Quotient", "D) Difference"],
+            "answer": "B) Product"
+        },
+      {
+        "topic": "Math",
+        "question": "If a triangle has angles measuring 30°, 60°, and 90°, what type of triangle is it?",
+        "options": ["A) Equilateral", "B) Isosceles", "C) Scalene", "D) Right-angled"],
+        "answer": "D) Right-angled"
+      },
+      {
+        "topic": "Math",
+        "question": "What is the value of 2 + 2?",
+        "options": ["A) 4", "B) 5", "C) 6", "D) 7"],
+        "answer": "A) 4"
+      },
+      {
+        "topic": "Math",
+        "question": "What is the value of 2 * 2?",
+        "options": ["A) 4", "B) 5", "C) 6", "D) 7"],
+        "answer": "A) 4"
+      },
+      {
+        "topic": "Math",
+        "question": "What is the value of 2 / 2?",
+        "options": ["A) 4", "B) 5", "C) 6", "D) 7"],
+        "answer": "A) 4"
+      },
+      {
+        "topic": "Math",
+        "question": "What is the value of 2 - 2?",
+        "options": ["A) 4", "B) 5", "C) 6", "D) 7"],
+        "answer": "A) 4"
+      },
+      {
+        "topic": "Math",
+        "question": "What is the value of 2 % 2?",
+        "options": ["A) 4", "B) 5", "C) 6", "D) 7"],
+        "answer": "A) 4"
+      },
+      {
+        "topic": "Math",
+        "question": "What is the value of 2 ^ 2?",
+        "options": ["A) 4", "B) 5", "C) 6", "D) 7"],
+        "answer": "A) 4"
+      },
+      {
+        "topic": "Math",
+        "question": "What is the value of 2 + 2?",
+        "options": ["A) 4", "B) 5", "C) 6", "D) 7"],
+        "answer": "A) 4"
+      },
+      {
+        "topic": "Math",
+        "question": "What is the value of 2 + 2?",
+        "options": ["A) 4", "B) 5", "C) 6", "D) 7"],
+        "answer": "A) 4"
+      },
+
+      {
+        "topic": "Science",
+        "question": "What is the powerhouse of the cell?",
+        "options": ["A) Nucleus", "B) Mitochondria", "C) Ribosome", "D) Endoplasmic Reticulum"],
+        "answer": "B) Mitochondria"
+      },
+      {
+        "topic": "Science",
+        "question": "Which planet is known as the 'Red Planet'?",
+        "options": ["A) Mars", "B) Venus", "C) Jupiter", "D) Saturn"],
+        "answer": "A) Mars"
+      },
+      {
+        "topic": "Science",
+        "question": "What is the largest organ in the human body?",
+        "options": ["A) Skin", "B) Heart", "C) Liver", "D) Brain"],
+        "answer": "A) Skin"
+      },
+      {
+        "topic": "Science",
+        "question": "What is the largest animal in the world?",
+        "options": ["A) Blue Whale", "B) Elephant", "C) Giraffe", "D) Lion"],
+        "answer": "A) Blue Whale"
+      },
+      
+      {
+         "topic": "Science",
+         "question": "What is the chemical symbol for gold?",
+         "options": ["A) Au", "B) Ag", "C) Fe", "D) Cu"],
+         "answer": "A) Au"
+      },
+      
+      {
+         "topic": "Science",
+         "question": "Who developed the theory of relativity?",
+         "options": ["A) Isaac Newton", "B) Albert Einstein", "C) Galileo Galilei", "D) Stephen Hawking"],
+         "answer": "B) Albert Einstein"
+      },
+      
+      {
+         "topic": "Science",
+         "question": "Which gas is most abundant in Earth's atmosphere?",
+         "options": ["A) Oxygen", "B) Nitrogen", "C) Carbon Dioxide", "D) Hydrogen"],
+         "answer": "B) Nitrogen"
+      },
+      
+      {
+         "topic": "Science",
+         "question": "What is the smallest prime number?",
+         "options": ["A) 0", "B) 1", "C) 2", "D) 3"],
+         "answer": "C) 2"
+      },
+      
+      {
+         "topic": "Science",
+         "question": "Which element has the atomic number 79?",
+         "options": ["A) Gold", "B) Silver", "C) Iron", "D) Copper"],
+         "answer": "A) Gold"
+      },
+      
+      {
+         "topic": "Science",
+         "question": "What is the process by which plants make their own food?",
+         "options": ["A) Respiration", "B) Photosynthesis", "C) Transpiration", "D) Digestion"],
+         "answer": "B) Photosynthesis"
+      },
+      
+      {
+         "topic": "Science",
+         "question": "What is the speed of light in a vacuum?",
+         "options": ["A) 300,000 km/s", "B) 150,000 km/s", "C) 500,000 km/s", "D) 200,000 km/s"],
+         "answer": "A) 300,000 km/s"
+      },
+      
+      {
+         "topic": "Science",
+         "question": "Which gas do plants absorb during photosynthesis?",
+         "options": ["A) Oxygen", "B) Nitrogen", "C) Carbon Dioxide", "D) Hydrogen"],
+         "answer": "C) Carbon Dioxide"
+      },
+      
+      {
+         "topic": "Science",
+         "question": "What is the chemical symbol for water?",
+         "options": ["A) H2O", "B) CO2", "C) O2", "D) NaCl"],
+         "answer": "A) H2O"
+      },
+      
+      {
+         "topic": "Science",
+         "question": "Who is known as the father of modern physics?",
+         "options": ["A) Isaac Newton", "B) Albert Einstein", "C) Galileo Galilei", "D) Nikola Tesla"],
+         "answer": "A) Albert Einstein"
+      },
+      
+      {
+         "topic": "Science",
+         "question": "What is the SI unit of force?",
+         "options": ["A) Newton", "B) Watt", "C) Joule", "D) Pascal"],
+         "answer": "A) Newton"
+      },
+      
+      {
+         "topic": "Science",
+         "question": "Which planet is known as the 'Morning Star' or 'Evening Star'?",
+         "options": ["A) Mercury", "B) Venus", "C) Mars", "D) Jupiter"],
+         "answer": "B) Venus"
+      },
+      
+      {
+         "topic": "Science",
+         "question": "What is the main function of the cerebrum in the human brain?",
+         "options": ["A) Breathing", "B) Memory", "C) Balance", "D) Digestion"],
+         "answer": "B) Memory"
+      },
+      
+      {
+         "topic": "Science",
+         "question": "Which element is essential for human bones and teeth?",
+         "options": ["A) Calcium", "B) Iron", "C) Sodium", "D) Potassium"],
+         "answer": "A) Calcium"
+      },
+      
+      {
+         "topic": "Science",
+         "question": "What is the chemical formula for methane?",
+         "options": ["A) CH4", "B) CO2", "C) H2O", "D) O2"],
+         "answer": "A) CH4"
+      },
+      
+      {
+         "topic": "Science",
+         "question": "Who discovered penicillin?",
+         "options": ["A) Alexander Fleming", "B) Louis Pasteur", "C) Joseph Lister", "D) Marie Curie"],
+         "answer": "A) Alexander Fleming"
+      },
+      
+      {
+         "topic": "Science",
+         "question": "What is the process of converting water vapor into liquid water called?",
+         "options": ["A) Evaporation", "B) Condensation", "C) Sublimation", "D) Precipitation"],
+         "answer": "B) Condensation"
+      },
+
+      
+      {
+         "topic": "Science",
+         "question": "Which gas is responsible for the Earth's ozone layer depletion?",
+         "options": ["A) Oxygen", "B) Nitrogen", "C) Chlorofluorocarbons (CFCs)", "D) Methane"],
+         "answer": "C) Chlorofluorocarbons (CFCs)"
+      },
+      
+      {
+         "topic": "Science",
+         "question": "What is the smallest unit of an element that retains its chemical properties?",
+         "options": ["A) Atom", "B) Molecule", "C) Cell", "D) Proton"],
+         "answer": "A) Atom"
+      },
+      
+      {
+         "topic": "Science",
+         "question": "Which gas is known as laughing gas?",
+         "options": ["A) Nitrous Oxide", "B) Carbon Monoxide", "C) Methane", "D) Hydrogen"],
+         "answer": "A) Nitrous Oxide"
+      },
+      
+      {
+         "topic": "Science",
+         "question": "What is the process of cell division in eukaryotes?",
+         "options": ["A) Mitosis", "B) Meiosis", "C) Binary Fission", "D) Budding"],
+         "answer": "A) Mitosis"
+      },
+      
+      {
+         "topic": "Science",
+         "question": "Who formulated the laws of motion?",
+         "options": ["A) Isaac Newton", "B) Galileo Galilei", "C) Albert Einstein", "D) Johannes Kepler"],
+         "answer": "A) Isaac Newton"
+      },
+      
+      {
+         "topic": "Science",
+         "question": "Which metal is the best conductor of electricity?",
+         "options": ["A) Copper", "B) Aluminum", "C) Gold", "D) Iron"],
+         "answer": "A) Copper"
+      },
+      
+      {
+         "topic": "Science",
+         "question": "What is the process of converting light energy into chemical energy in plants?",
+         "options": ["A) Respiration", "B) Photosynthesis", "C) Transpiration", "D) Digestion"],
+         "answer": "B) Photosynthesis"
+      },
+      
+      {
+         "topic": "Science",
+         "question": "Which type of electromagnetic radiation has the shortest wavelength?",
+         "options": ["A) Radio Waves", "B) Microwaves", "C) X-rays", "D) Infrared"],
+         "answer": "C) X-rays"
+      },
+      
+      {
+         "topic": "Science",
+         "question": "What is the pH of pure water at room temperature?",
+         "options": ["A) 7", "B) 5", "C) 9", "D) 3"],
+         "answer": "A) 7"
+      },
+      
+      {
+         "topic": "Science",
+         "question": "Which gas is responsible for the greenhouse effect on Earth?",
+         "options": ["A) Carbon Dioxide", "B) Oxygen", "C) Nitrogen", "D) Hydrogen"],
+         "answer": "A) Carbon Dioxide"
+      },
+      
+      {
+         "topic": "Science",
+         "question": "What is the chemical symbol for the element iron?",
+         "options": ["A) Fe", "B) Au", "C) Ag", "D) Cu"],
+         "answer": "A) Fe"
+      },
+      
+      {
+         "topic": "Science",
+         "question": "Who proposed the heliocentric model of the solar system?",
+         "options": ["A) Ptolemy", "B) Copernicus", "C) Kepler", "D) Galileo"],
+         "answer": "B) Copernicus"
+      },
+      
+      {
+         "topic": "Science",
+         "question": "What is the unit of electrical resistance?",
+         "options": ["A) Ohm", "B) Volt", "C) Ampere", "D) Watt"],
+         "answer": "A) Ohm"
+      },
+      
+      {
+        "topic": "General Knowledge",
+        "question": "What is the capital of India?",
+        "options": ["A) Mumbai", "B) New Delhi", "C) Kolkata", "D) Chennai"],
+        "answer": "B) New Delhi"
+      },
+      {
+        "topic": "General Knowledge",
+        "question": "What is the capital of the United States?",
+        "options": ["A) New York", "B) Washington D.C.", "C) Los Angeles", "D) Chicago"],
+        "answer": "B) Washington D.C."
+      },
+      {
+        "topic": "General Knowledge",
+        "question": "What is the capital of Canada?",
+        "options": ["A) Toronto", "B) Vancouver", "C) Ottawa", "D) Montreal"],
+        "answer": "C) Ottawa"
+      },
+      {
+        "topic": "General Knowledge",
+        "question": "What is the capital of China?",
+        "options": ["A) Shanghai", "B) Beijing", "C) Hong Kong", "D) Shenzhen"],
+        "answer": "B) Beijing"
+      },
+      {
+        "topic": "General Knowledge",
+        "question": "What is the capital of Japan?",
+        "options": ["A) Tokyo", "B) Kyoto", "C) Osaka", "D) Yokohama"],
+        "answer": "A) Tokyo"
+      },
+      {
+        "topic": "General Knowledge",
+        "question": "What is the capital of South Korea?",
+        "options": ["A) Seoul", "B) Busan", "C) Incheon", "D) Daegu"],
+        "answer": "A) Seoul"
+      },
+      {
+        "topic": "General Knowledge",
+        "question": "What is the capital of France?",
+        "options": ["A) Paris", "B) Marseille", "C) Lyon", "D) Toulouse"],
+        "answer": "A) Paris"
+      },
+      {
+        "topic": "General Knowledge",
+        "question": "What is the capital of Germany?",
+        "options": ["A) Berlin", "B) Hamburg", "C) Munich", "D) Cologne"],
+        "answer": "A) Berlin"
+      },
+      {
+        "topic": "General Knowledge",
+        "question": "What is the capital of Italy?",
+        "options": ["A) Rome", "B) Milan", "C) Naples", "D) Turin"],
+        "answer": "A) Rome"
+      },
+
+      {
+        "topic": "General Knowledge",
+        "question": "Who wrote 'Romeo and Juliet'?",
+        "options": ["A) Charles Dickens", "B) William Shakespeare", "C) Jane Austen", "D) Mark Twain"],
+        "answer": "B) William Shakespeare"
+      },
+      {
+        "topic": "General Knowledge",
+        "question": "What is the capital of Australia?",
+        "options": ["A) Sydney", "B) Canberra", "C) Melbourne", "D) Brisbane"],
+        "answer": "B) Canberra"
+      },
+{
+   "topic": "General Knowledge",
+   "question": "Which river is the longest in the world?",
+   "options": ["A) Nile", "B) Amazon", "C) Yangtze", "D) Mississippi"],
+   "answer": "A) Nile"
+},
+
+{
+   "topic": "General Knowledge",
+   "question": "In which year did Christopher Columbus reach the Americas?",
+   "options": ["A) 1492", "B) 1500", "C) 1607", "D) 1776"],
+   "answer": "A) 1492"
+},
+
+{
+   "topic": "General Knowledge",
+   "question": "What is the currency of Japan?",
+   "options": ["A) Yen", "B) Yuan", "C) Won", "D) Ringgit"],
+   "answer": "A) Yen"
+},
+
+{
+   "topic": "General Knowledge",
+   "question": "Who wrote 'Romeo and Juliet'?",
+   "options": ["A) William Shakespeare", "B) Jane Austen", "C) Charles Dickens", "D) Mark Twain"],
+   "answer": "A) William Shakespeare"
+},
+
+{
+   "topic": "General Knowledge",
+   "question": "Which country is known as the Land of the Rising Sun?",
+   "options": ["A) China", "B) Japan", "C) South Korea", "D) Vietnam"],
+   "answer": "B) Japan"
+},
+
+{
+   "topic": "General Knowledge",
+   "question": "What is the largest ocean on Earth?",
+   "options": ["A) Atlantic Ocean", "B) Indian Ocean", "C) Southern Ocean", "D) Pacific Ocean"],
+   "answer": "D) Pacific Ocean"
+},
+
+{
+   "topic": "General Knowledge",
+   "question": "Who painted the Mona Lisa?",
+   "options": ["A) Leonardo da Vinci", "B) Vincent van Gogh", "C) Pablo Picasso", "D) Michelangelo"],
+   "answer": "A) Leonardo da Vinci"
+},
+
+{
+   "topic": "General Knowledge",
+   "question": "What is the capital of Australia?",
+   "options": ["A) Sydney", "B) Melbourne", "C) Canberra", "D) Brisbane"],
+   "answer": "C) Canberra"
+},
+
+{
+   "topic": "General Knowledge",
+   "question": "Which planet is known as the 'Red Planet'?",
+   "options": ["A) Mars", "B) Venus", "C) Jupiter", "D) Saturn"],
+   "answer": "A) Mars"
+},
+
+{
+   "topic": "General Knowledge",
+   "question": "Who is the current Prime Minister of Canada?",
+   "options": ["A) Justin Trudeau", "B) Andrew Scheer", "C) Stephen Harper", "D) Jean Chrétien"],
+   "answer": "A) Justin Trudeau"
+},
+
+{
+   "topic": "General Knowledge",
+   "question": "What is the largest mammal in the world?",
+   "options": ["A) Elephant", "B) Blue Whale", "C) Giraffe", "D) Lion"],
+   "answer": "B) Blue Whale"
+},
+
+{
+   "topic": "General Knowledge",
+   "question": "Which mountain is the highest in the world?",
+   "options": ["A) K2", "B) Mount Everest", "C) Kilimanjaro", "D) Matterhorn"],
+   "answer": "B) Mount Everest"
+},
+
+{
+   "topic": "General Knowledge",
+   "question": "Who is the author of 'To Kill a Mockingbird'?",
+   "options": ["A) J.K. Rowling", "B) Harper Lee", "C) George Orwell", "D) Ernest Hemingway"],
+   "answer": "B) Harper Lee"
+},
+
+{
+   "topic": "General Knowledge",
+   "question": "Which country is known as the 'Land of the Midnight Sun'?",
+   "options": ["A) Norway", "B) Sweden", "C) Finland", "D) Iceland"],
+   "answer": "A) Norway"
+},
+
+{
+   "topic": "General Knowledge",
+   "question": "What is the capital of Brazil?",
+   "options": ["A) Rio de Janeiro", "B) Brasília", "C) São Paulo", "D) Salvador"],
+   "answer": "B) Brasília"
+},
+
+{
+   "topic": "General Knowledge",
+   "question": "In which year did World War II end?",
+   "options": ["A) 1943", "B) 1945", "C) 1950", "D) 1939"],
+   "answer": "B) 1945"
+},
+
+{
+   "topic": "General Knowledge",
+   "question": "Who is known as the 'Father of Computer Science'?",
+   "options": ["A) Alan Turing", "B) Bill Gates", "C) Steve Jobs", "D) Mark Zuckerberg"],
+   "answer": "A) Alan Turing"
+},
+
+{
+   "topic": "General Knowledge",
+   "question": "What is the national animal of China?",
+   "options": ["A) Panda", "B) Tiger", "C) Dragon", "D) Elephant"],
+   "answer": "A) Panda"
+},
+
+{
+   "topic": "General Knowledge",
+   "question": "Which famous scientist developed the theory of evolution?",
+   "options": ["A) Charles Darwin", "B) Isaac Newton", "C) Albert Einstein", "D) Gregor Mendel"],
+   "answer": "A) Charles Darwin"
+},
+
+{
+   "topic": "General Knowledge",
+   "question": "What is the currency of Germany?",
+   "options": ["A) Euro", "B) Pound Sterling", "C) Yen", "D) Deutsche Mark"],
+   "answer": "A) Euro"
+},
+
+{
+   "topic": "General Knowledge",
+   "question": "Who is the founder of Microsoft Corporation?",
+   "options": ["A) Bill Gates", "B) Steve Jobs", "C) Mark Zuckerberg", "D) Jeff Bezos"],
+   "answer": "A) Bill Gates"
+},
+
+{
+   "topic": "General Knowledge",
+   "question": "What is the largest desert in the world?",
+   "options": ["A) Sahara Desert", "B) Gobi Desert", "C) Antarctic Desert", "D) Arabian Desert"],
+   "answer": "C) Antarctic Desert"
+},
+
+{
+   "topic": "General Knowledge",
+   "question": "Who painted 'Starry Night'?",
+   "options": ["A) Vincent van Gogh", "B) Pablo Picasso", "C) Claude Monet", "D) Leonardo da Vinci"],
+   "answer": "A) Vincent van Gogh"
+},
+
+{
+   "topic": "General Knowledge",
+   "question": "Which country is known as the 'Land of the Long White Cloud'?",
+   "options": ["A) Australia", "B) New Zealand", "C) Ireland", "D) Canada"],
+   "answer": "B) New Zealand"
+},
+
+{
+   "topic": "General Knowledge",
+   "question": "What is the main ingredient in guacamole?",
+   "options": ["A) Avocado", "B) Tomato", "C) Onion", "D) Garlic"],
+   "answer": "A) Avocado"
+},
+
+{
+   "topic": "General Knowledge",
+   "question": "Which famous playwright wrote 'Hamlet'?",
+   "options": ["A) William Shakespeare", "B) Oscar Wilde", "C) George Bernard Shaw", "D) Anton Chekhov"],
+   "answer": "A) William Shakespeare"
+},
+
+{
+   "topic": "General Knowledge",
+   "question": "What is the national flower of Japan?",
+   "options": ["A) Rose", "B) Lotus", "C) Cherry Blossom", "D) Tulip"],
+   "answer": "C) Cherry Blossom"
+},
+
+{
+   "topic": "General Knowledge",
+   "question": "Which element is represented by the chemical symbol 'O'?",
+   "options": ["A) Oxygen", "B) Gold", "C) Iron", "D) Silver"],
+   "answer": "A) Oxygen"
+},
+
+{
+   "topic": "General Knowledge",
+   "question": "Who is the current President of France?",
+   "options": ["A) Emmanuel Macron", "B) François Hollande", "C) Nicolas Sarkozy", "D) Jacques Chirac"],
+   "answer": "A) Emmanuel Macron"
+},
+
+{
+   "topic": "General Knowledge",
+   "question": "Which famous scientist developed the theory of relativity?",
+   "options": ["A) Isaac Newton", "B) Albert Einstein", "C) Galileo Galilei", "D) Stephen Hawking"],
+   "answer": "B) Albert Einstein"
+}
+
+    ]
+  }
+  
