@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Karuna_assignment_quiz")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e962b792511e7105690d7df09fcc58dc30e1e3a4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c58440f5ba5d0c46777882d519c95c2334e8afe4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Karuna_assignment_quiz")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Karuna_assignment_quiz")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

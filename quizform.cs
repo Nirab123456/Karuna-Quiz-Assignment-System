@@ -19,10 +19,7 @@ namespace Karuna_assignment_quiz
         private int numberOfQuestions;
         private List<string> selectedTopics;
         private int currentQuestion = 0;
-        private int selectedAnswer;
-
-
-
+        private int selectedAnswer = -1; // Initialize with an invalid index
 
         public quizform(string userName, int numberOfQuestions, List<string> selectedTopics)
         {
@@ -33,32 +30,12 @@ namespace Karuna_assignment_quiz
             this.numberOfQuestions = numberOfQuestions;
             this.selectedTopics = selectedTopics;
 
-;
-
-
-
-            // Now you have the list of quiz questions (quizQuestions) that you can use in your quizform
-            // You can display these questions in your UI or perform any other necessary actions
-            // For example, you can display the first question in the list as follows:
-
-            //List<Question> quizQuestions = QuestionLoader.LoadQuestions(numberOfQuestions, selectedTopics);
-            //var firstQuestion = quizQuestions.FirstOrDefault();
-            //if (firstQuestion != null)
-            //{
-            //    label3.Text = firstQuestion.QuestionText;
-            //    checkedListBox1.Items.AddRange(firstQuestion.Options.ToArray());
-            //}
-
             // Customize the form based on the received information
             label1.Text = $"Hello, {userName}! You have chosen {numberOfQuestions} questions. Good luck.";
 
-            //auto generate first click
+            // Auto-generate first click
             button1_Click(null, null);
-
-
-
         }
- 
 
 
 
@@ -66,12 +43,11 @@ namespace Karuna_assignment_quiz
         {
 
         }
+
         private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //save the selected answer
-            selectedAnswer = checkedListBox1.Items.IndexOf(checkedListBox1.SelectedItem);
-
-
+            // Save the selected answer index
+            selectedAnswer = checkedListBox1.SelectedIndex;
         }
         private void label1_Click(object sender, EventArgs e)
         {
@@ -80,53 +56,64 @@ namespace Karuna_assignment_quiz
         private void button1_Click(object sender, EventArgs e)
         {
             List<Question> quizQuestions = QuestionLoader.LoadQuestions(numberOfQuestions, selectedTopics);
-            var runningQuestion = quizQuestions[currentQuestion];
-            label3.Text = runningQuestion.QuestionText;
-            checkedListBox1.Items.Clear();
-            checkedListBox1.Items.AddRange(runningQuestion.Options.ToArray());
 
-            if (e != null)
+            // Check if the current question is valid
+            if (currentQuestion < quizQuestions.Count)
             {
+                var question = quizQuestions[currentQuestion];
+                label3.Text = question.QuestionText;
 
-                if (selectedAnswer == null)
-                {
-                    MessageBox.Show("Please select an answer");
-                }
-                else
-                {
-                    var question = quizQuestions[currentQuestion];
-                    var correctAnswer = question.Answer.ToLower();
-                    var selectedcorrectanswer = question.Options[selectedAnswer].ToString().ToLower();
+                checkedListBox1.Items.Clear();
+                checkedListBox1.Items.AddRange(question.Options.ToArray());
 
-                    if (selectedcorrectanswer == correctAnswer) 
-                    {
-                        MessageBox.Show("Correct Answer");
+                // Check if an answer is selected before proceeding
+                if (selectedAnswer == -1)
+                {
+                    if ( e != null) {
+
+                        MessageBox.Show("Please select an answer");
+                        return;
                     }
                     else
                     {
-                        MessageBox.Show("Wrong Answer");
+                        return;
                     }
-
-                    currentQuestion++;
-
-                    // Check if all questions are answered
-                    if (currentQuestion >= numberOfQuestions)
-                    {
-                        MessageBox.Show("Quiz completed!");
-                        // You might want to handle the completion of the quiz here
-                        // For example, display a summary or navigate to another form
-                    }
-
-                    // Display the next question
-                    var nextQuestion = quizQuestions[currentQuestion];
-                    label3.Text = nextQuestion.QuestionText;
-                    checkedListBox1.Items.Clear();
-                    checkedListBox1.Items.AddRange(nextQuestion.Options.ToArray());
-
 
                 }
+
+                var correctAnswer = question.Answer.ToLower();
+                var selectedCorrectAnswer = question.Options[selectedAnswer].ToString().ToLower();
+
+                if (selectedCorrectAnswer == correctAnswer)
+                {
+                    MessageBox.Show("Correct Answer");
+                }
+                else
+                {
+
+                    MessageBox.Show("Wrong Answer");
+                }
+
+                currentQuestion++;
+
+                // Check if all questions are answered
+                if (currentQuestion >= numberOfQuestions)
+                {
+                    MessageBox.Show("Quiz completed!");
+                    // You might want to handle the completion of the quiz here
+                    // For example, display a summary or navigate to another form
+                    return;
+                }
+
+                // Display the next question
+                var nextQuestion = quizQuestions[currentQuestion];
+                label3.Text = nextQuestion.QuestionText;
+                checkedListBox1.Items.Clear();
+                checkedListBox1.Items.AddRange(nextQuestion.Options.ToArray());
+
+                // Reset selected answer for the next question
+                selectedAnswer = -1;
             }
         }
-
     }
 }
