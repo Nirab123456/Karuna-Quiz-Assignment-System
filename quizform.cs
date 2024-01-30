@@ -66,6 +66,7 @@ namespace Karuna_assignment_quiz
         {
             // Save the selected answer index
             selectedAnswer = checkedListBox1.SelectedIndex;
+
         }
         private void label1_Click(object sender, EventArgs e)
         {
@@ -93,7 +94,7 @@ namespace Karuna_assignment_quiz
                     if (e != null)
                     {
 
-                        MessageBox.Show("Please select an answer");
+                        MessageBox.Show("Please select an answer", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
                     else
@@ -108,7 +109,7 @@ namespace Karuna_assignment_quiz
 
                 if (selectedCorrectAnswer == correctAnswer)
                 {
-                    MessageBox.Show("Correct Answer");
+                    //MessageBox.Show("Correct Answer");
                     correctanswered++;
                     label2.Text = $"CURRENT MARK : {correctanswered}";
                     double percentage = ((double)correctanswered / numberOfQuestions) * 100;
@@ -117,8 +118,12 @@ namespace Karuna_assignment_quiz
                 }
                 else
                 {
+                    label2.Text = $"CURRENT MARK : {correctanswered}";
+                    double percentage = ((double)correctanswered / numberOfQuestions) * 100;
+                    label5.Text = $"CURRENT PERCENTAGE: {percentage:F2}%";
 
-                    MessageBox.Show("Wrong Answer");
+
+                    //MessageBox.Show("Wrong Answer");
 
                 }
 
@@ -127,9 +132,9 @@ namespace Karuna_assignment_quiz
                 // Check if all questions are answered
                 if (currentQuestion >= numberOfQuestions)
                 {
-                    MessageBox.Show($"QUIZ DONE");
                     checkedListBox1.Enabled = false;
                     button1.Enabled = false;
+
                     double percentage = ((double)correctanswered / numberOfQuestions) * 100;
                     if (percentage >= 95)
                     {
@@ -158,6 +163,13 @@ namespace Karuna_assignment_quiz
                     else
                     {
                         label6.Text = $"Stay committed {userName}! Work hard to improve your performance.";
+                    }
+
+                    var result = MessageBox.Show($"Congratulations, {userName}! 🎉\nYou answered {correctanswered} questions correctly out of {numberOfQuestions}. Great job!", "Quiz Completed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    if (result == DialogResult.OK)
+                    {
+                        Application.Exit();
                     }
 
 

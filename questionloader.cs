@@ -81,8 +81,17 @@ public static class QuestionLoader
         //drop copy of questions
         filteredQuestions = filteredQuestions.Distinct().ToList();
 
-        // Calculate the target number of questions for each subject
-        int targetQuestionsPerSubject = numberOfQuestions / topics.Count;
+        int targetQuestionsPerSubject = 0;
+
+        // see if the number of questions is divisible by the number of topics
+        if (numberOfQuestions % topics.Count == 0)
+        {
+             targetQuestionsPerSubject = (numberOfQuestions / topics.Count);
+        }
+        else
+        {
+             targetQuestionsPerSubject = (numberOfQuestions / topics.Count + 1);
+        }
 
         // Iterate through the filtered questions and select questions evenly from each subject
         List<Question> selectedQuestions = new List<Question>();
@@ -102,6 +111,11 @@ public static class QuestionLoader
         {
             selectedQuestions.Add(filteredQuestions[0]);
             filteredQuestions.RemoveAt(0);
+        }
+        // if more then remove
+        while (selectedQuestions.Count > numberOfQuestions)
+        {
+            selectedQuestions.RemoveAt(0);
         }
 
         return selectedQuestions;

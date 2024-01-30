@@ -64,7 +64,7 @@ namespace Karuna_assignment_quiz
                 return;
             }
 
-            if (!int.TryParse(textBox2.Text, out numberOfQuestions) || numberOfQuestions < 3 || numberOfQuestions > 50)
+            if (!int.TryParse(textBox2.Text, out numberOfQuestions) || numberOfQuestions < 30 || numberOfQuestions > 50)
             {
                 MessageBox.Show("Please enter a valid number of questions (30-50).", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
