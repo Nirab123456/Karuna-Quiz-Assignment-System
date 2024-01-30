@@ -21,6 +21,7 @@ namespace Karuna_assignment_quiz
         private int currentQuestion = 0;
         private int selectedAnswer = -1; // Initialize with an invalid index
 
+        private int correctanswered = 0;
         public quizform(string userName, int numberOfQuestions, List<string> selectedTopics)
         {
             InitializeComponent();
@@ -29,9 +30,11 @@ namespace Karuna_assignment_quiz
             this.userName = userName;
             this.numberOfQuestions = numberOfQuestions;
             this.selectedTopics = selectedTopics;
+            
 
             // Customize the form based on the received information
             label1.Text = $"Hello, {userName}! You have chosen {numberOfQuestions} questions. Good luck.";
+
 
             // Auto-generate first click
             button1_Click(null, null);
@@ -55,6 +58,7 @@ namespace Karuna_assignment_quiz
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            label4.Text = $"CURRENT.Q : {currentQuestion + 1}";
             List<Question> quizQuestions = QuestionLoader.LoadQuestions(numberOfQuestions, selectedTopics);
 
             // Check if the current question is valid
@@ -69,7 +73,8 @@ namespace Karuna_assignment_quiz
                 // Check if an answer is selected before proceeding
                 if (selectedAnswer == -1)
                 {
-                    if ( e != null) {
+                    if (e != null)
+                    {
 
                         MessageBox.Show("Please select an answer");
                         return;
@@ -87,6 +92,10 @@ namespace Karuna_assignment_quiz
                 if (selectedCorrectAnswer == correctAnswer)
                 {
                     MessageBox.Show("Correct Answer");
+                    correctanswered++;
+                    label2.Text = $"CURRENT MARK {correctanswered}";
+
+
                 }
                 else
                 {
@@ -114,6 +123,28 @@ namespace Karuna_assignment_quiz
                 // Reset selected answer for the next question
                 selectedAnswer = -1;
             }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void quizform_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
