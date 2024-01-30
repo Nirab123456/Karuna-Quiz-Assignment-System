@@ -52,15 +52,15 @@
             // 
             // checkedListBox1
             // 
+            checkedListBox1.BorderStyle = BorderStyle.None;
             checkedListBox1.FormattingEnabled = true;
             checkedListBox1.HorizontalScrollbar = true;
             checkedListBox1.ImeMode = ImeMode.NoControl;
             checkedListBox1.Location = new Point(12, 192);
             checkedListBox1.MultiColumn = true;
             checkedListBox1.Name = "checkedListBox1";
-            checkedListBox1.Size = new Size(433, 92);
+            checkedListBox1.Size = new Size(433, 88);
             checkedListBox1.TabIndex = 1;
-            checkedListBox1.ThreeDCheckBoxes = true;
             checkedListBox1.UseCompatibleTextRendering = true;
             checkedListBox1.SelectedIndexChanged += checkedListBox1_SelectedIndexChanged;
             // 
@@ -99,9 +99,8 @@
             label2.ForeColor = Color.Maroon;
             label2.Location = new Point(156, 59);
             label2.Name = "label2";
-            label2.Size = new Size(23, 27);
+            label2.Size = new Size(0, 27);
             label2.TabIndex = 6;
-            label2.Text = "hi";
             label2.Click += label2_Click_1;
             // 
             // label4
@@ -111,9 +110,8 @@
             label4.ForeColor = SystemColors.HotTrack;
             label4.Location = new Point(19, 64);
             label4.Name = "label4";
-            label4.Size = new Size(22, 20);
+            label4.Size = new Size(0, 20);
             label4.TabIndex = 7;
-            label4.Text = "hi";
             label4.Click += label4_Click;
             // 
             // label5
@@ -123,9 +121,8 @@
             label5.ForeColor = Color.Fuchsia;
             label5.Location = new Point(590, 64);
             label5.Name = "label5";
-            label5.Size = new Size(24, 23);
+            label5.Size = new Size(0, 23);
             label5.TabIndex = 8;
-            label5.Text = "hi";
             label5.Click += label5_Click;
             // 
             // label6
@@ -137,22 +134,19 @@
             label6.Location = new Point(590, 116);
             label6.MaximumSize = new Size(250, 500);
             label6.Name = "label6";
-            label6.Size = new Size(21, 20);
+            label6.Size = new Size(2, 20);
             label6.TabIndex = 9;
-            label6.Text = "hi";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.BorderStyle = BorderStyle.FixedSingle;
             label7.Font = new Font("Arial Nova", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label7.ForeColor = Color.Gray;
             label7.Location = new Point(386, 64);
             label7.MaximumSize = new Size(250, 500);
             label7.Name = "label7";
-            label7.Size = new Size(21, 20);
+            label7.Size = new Size(0, 18);
             label7.TabIndex = 10;
-            label7.Text = "hi";
             // 
             // quizform
             // 

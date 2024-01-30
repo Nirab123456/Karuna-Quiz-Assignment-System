@@ -81,6 +81,7 @@ namespace Karuna_assignment_quiz
             {
                 var question = quizQuestions[currentQuestion];
                 label3.Text = question.QuestionText;
+
                 label7.Text = question.Topic;
 
                 checkedListBox1.Items.Clear();
@@ -167,6 +168,7 @@ namespace Karuna_assignment_quiz
                 // Display the next question
                 var nextQuestion = quizQuestions[currentQuestion];
                 label3.Text = nextQuestion.QuestionText;
+                label7.Text = question.Topic;
                 checkedListBox1.Items.Clear();
                 checkedListBox1.Items.AddRange(nextQuestion.Options.ToArray());
 

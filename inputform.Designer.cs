@@ -88,7 +88,7 @@
             // subjects
             // 
             subjects.FormattingEnabled = true;
-            subjects.Items.AddRange(new object[] { "Math", "Science", "General knowledge " });
+            subjects.Items.AddRange(new object[] { "Math", "Science", "General Knowledge" });
             subjects.Location = new Point(44, 170);
             subjects.Name = "subjects";
             subjects.Size = new Size(167, 70);

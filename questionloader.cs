@@ -67,20 +67,45 @@ public static class QuestionLoader
 
     private static List<Question> SelectQuestions(List<Question> allQuestions, int numberOfQuestions, List<string> topics)
     {
-        // Implement your logic to filter questions based on topics and limit the number
-        // This is just a basic example, modify it based on your requirements
-        var filteredQuestions = allQuestions;
+        // Create a dictionary to store the count of questions for each subject
+        Dictionary<string, int> subjectCounts = new Dictionary<string, int>();
 
-        if (topics != null && topics.Count > 0)
+        // Initialize the count for each subject to 0
+        foreach (var topic in topics)
         {
-            filteredQuestions = filteredQuestions.FindAll(q => topics.Contains(q.Topic));
+            subjectCounts[topic] = 0;
         }
 
-        if (numberOfQuestions > 0 && numberOfQuestions < filteredQuestions.Count)
+        // Filter questions based on topics
+        var filteredQuestions = allQuestions.Where(q => topics.Contains(q.Topic)).ToList();
+        //drop copy of questions
+        filteredQuestions = filteredQuestions.Distinct().ToList();
+
+        // Calculate the target number of questions for each subject
+        int targetQuestionsPerSubject = numberOfQuestions / topics.Count;
+
+        // Iterate through the filtered questions and select questions evenly from each subject
+        List<Question> selectedQuestions = new List<Question>();
+
+        foreach (var question in filteredQuestions)
         {
-            filteredQuestions = filteredQuestions.GetRange(0, numberOfQuestions);
+            if (subjectCounts[question.Topic] < targetQuestionsPerSubject)
+            {
+                selectedQuestions.Add(question);
+                subjectCounts[question.Topic]++;
+            }
         }
 
-        return filteredQuestions;
+        // Check if the selectedQuestions count is less than numberOfQuestions
+        // If so, add more questions from the beginning of filteredQuestions
+        while (selectedQuestions.Count < numberOfQuestions && filteredQuestions.Count > 0)
+        {
+            selectedQuestions.Add(filteredQuestions[0]);
+            filteredQuestions.RemoveAt(0);
+        }
+
+        return selectedQuestions;
     }
+
+
 }

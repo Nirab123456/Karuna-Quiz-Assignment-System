@@ -84,7 +84,7 @@ namespace Karuna_assignment_quiz
             // For simplicity, let's display a message with the gathered information
             string selectedTopicsText = string.Join(", ", selectedTopics);
             string message = $"Hello, {userName}! You have chosen {numberOfQuestions} questions from the following topics: {selectedTopicsText}. Let's start the quiz!";
-            MessageBox.Show(message, "Quiz Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //MessageBox.Show(message, "Quiz Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             // Optionally, you can create a new form for the quiz and show it
             // QuizForm quizForm = new QuizForm(userName, numberOfQuestions, selectedTopics);
