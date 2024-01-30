@@ -22,6 +22,21 @@ namespace Karuna_assignment_quiz
         private int selectedAnswer = -1; // Initialize with an invalid index
 
         private int correctanswered = 0;
+
+        //private double currentPercentage()
+        //    {
+
+        //    if (currentQuestion == 0) { return 0; }
+
+        //    else
+        //    {
+        //        return  (correctanswered / numberOfQuestions) * 100;
+        //    }
+
+        //    }
+
+
+
         public quizform(string userName, int numberOfQuestions, List<string> selectedTopics)
         {
             InitializeComponent();
@@ -30,7 +45,7 @@ namespace Karuna_assignment_quiz
             this.userName = userName;
             this.numberOfQuestions = numberOfQuestions;
             this.selectedTopics = selectedTopics;
-            
+
 
             // Customize the form based on the received information
             label1.Text = $"Hello, {userName}! You have chosen {numberOfQuestions} questions. Good luck.";
@@ -66,6 +81,7 @@ namespace Karuna_assignment_quiz
             {
                 var question = quizQuestions[currentQuestion];
                 label3.Text = question.QuestionText;
+                label7.Text = question.Topic;
 
                 checkedListBox1.Items.Clear();
                 checkedListBox1.Items.AddRange(question.Options.ToArray());
@@ -93,14 +109,16 @@ namespace Karuna_assignment_quiz
                 {
                     MessageBox.Show("Correct Answer");
                     correctanswered++;
-                    label2.Text = $"CURRENT MARK {correctanswered}";
-
+                    label2.Text = $"CURRENT MARK : {correctanswered}";
+                    double percentage = ((double)correctanswered / numberOfQuestions) * 100;
+                    label5.Text = $"CURRENT PERCENTAGE: {percentage:F2}%";
 
                 }
                 else
                 {
 
                     MessageBox.Show("Wrong Answer");
+
                 }
 
                 currentQuestion++;
@@ -108,9 +126,41 @@ namespace Karuna_assignment_quiz
                 // Check if all questions are answered
                 if (currentQuestion >= numberOfQuestions)
                 {
-                    MessageBox.Show("Quiz completed!");
-                    // You might want to handle the completion of the quiz here
-                    // For example, display a summary or navigate to another form
+                    MessageBox.Show($"QUIZ DONE");
+                    checkedListBox1.Enabled = false;
+                    button1.Enabled = false;
+                    double percentage = ((double)correctanswered / numberOfQuestions) * 100;
+                    if (percentage >= 95)
+                    {
+                        label6.Text = $"Congratulations {userName}! You are truly exceptional.";
+                    }
+                    else if (percentage >= 80)
+                    {
+                        label6.Text = $"Well done {userName}! You have passed with my respect and a commendable score.";
+                    }
+                    else if (percentage >= 60)
+                    {
+                        label6.Text = $"Congratulations {userName}! You've passed the exam. It's a satisfactory result, but there's room for improvement.";
+                    }
+                    else if (percentage >= 40)
+                    {
+                        label6.Text = $"Keep pushing {userName}! You're close, but more effort is needed to reach 60% and pass.";
+                    }
+                    else if (percentage >= 20)
+                    {
+                        label6.Text = $"Stay determined {userName}! More hard work is required to achieve a 60% pass.";
+                    }
+                    else if (percentage >= 0)
+                    {
+                        label6.Text = $"Stay focused {userName}! Work diligently to reach a 60% pass.";
+                    }
+                    else
+                    {
+                        label6.Text = $"Stay committed {userName}! Work hard to improve your performance.";
+                    }
+
+
+
                     return;
                 }
 
@@ -143,6 +193,11 @@ namespace Karuna_assignment_quiz
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }
