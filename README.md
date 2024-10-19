@@ -9,3 +9,9 @@ Quiz Generation: Teachers can create quizzes with a mix of question types, setti
 Automated Grading: After a quiz is completed, the system grades the answers automatically and provides instant feedback to the student, helping them learn more effectively.
 Quiz Reports: Generate reports on student performance, allowing teachers to assess knowledge gaps and adjust their lesson plans accordingly.
 The system is built with scalability in mind, meaning that it can be expanded to support additional features like importing and exporting quizzes, integrating with external educational platforms, or enabling online quiz taking. Overall, this project serves as a versatile educational tool for both classroom and personal use.
+
+
+Developer Details :
+
+    Karuna Kandel
+    mail : karunakandel78@gmail.com
